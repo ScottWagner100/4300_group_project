@@ -1,11 +1,19 @@
 
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import UnauthHome from './components/UnauthHome';
+import { Login } from './components/Login';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<UnauthHome />} />
+        <Route path='/login' element={<Login />} />
+    </Routes>
+  </Router>
   );
 }
 
