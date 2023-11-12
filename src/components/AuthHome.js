@@ -12,6 +12,7 @@ import devils_photo from '../resources/Devils.png';
 import otter_photo from '../resources/Otter.png';
 import ostrich_photo from '../resources/Ostrich_Jockey.png';
 import EditGameList from "./EditGameList";
+import NewGameBox from "./NewGameBox";
 
 /*
 / The authenticated view of the homepage and root route.
@@ -65,8 +66,8 @@ export default function AuthHome() {
                 <h2 id="games_header">Games Catalog</h2>
                 <div className="game_list_cnt"><EditGameList games={games} /></div>
             </div>
-            <div className="new_game_box">
-                
+            <div className="new_game_box_cnt">
+                <NewGameBox />
             </div>
             <div className="bottom_bar" />
         </div>

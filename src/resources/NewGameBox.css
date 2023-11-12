@@ -1,0 +1,51 @@
+.new_game_box {
+    display: grid;
+    justify-content: center;
+    background-color: #183D3D;
+    padding-top: 10px;
+}
+
+#image_title_label {
+    color: #ffffff;
+    font-family: 'source-code';
+    font-size: x-small;
+    display: block;
+    
+}
+
+.input_cnt {
+    margin-bottom: 10px;
+    display: grid;
+    text-align: left;
+}
+
+.link_input {
+    width: 300px;
+    height: 30px;
+}
+
+#add_game_button {
+    width: 180px;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    font-weight: 400;
+    margin-bottom:20px;
+    margin-top: 10px;
+}
+
+#goto_gen_button {
+    width: 180px;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.add_game_button_cnt {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+
+}
