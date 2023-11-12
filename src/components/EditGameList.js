@@ -1,14 +1,14 @@
 // Game list, conditionally renders sample list for unauthenticated users
-import '../resources/GameList.css'
-import GamePhoto from './GamePhoto';
+import '../resources/EditGameList.css'
+import EditGamePhoto from './EditGamePhoto';
 
 // or full list for authenticated users.
-export default function GameList(props) {
+export default function EditGameList(props) {
 
     return (
         <div className="game_list">
             { props.games.map((game) => (
-                <GamePhoto 
+                <EditGamePhoto 
                     photo={game.image}
                     photo_text={game.name}
                 />

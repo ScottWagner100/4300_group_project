@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import '../resources/UnauthHome.css';
+import '../resources/AuthHome.css';
 import Cookie_Clicker from './Cookie_Clicker';
 import Labeled_Photo from './Labeled_Photo';
 import brandon_photo from '../resources/BrandonPhoto.png';
@@ -11,14 +11,15 @@ import lovecraft_photo from '../resources/Lovecraft.png';
 import devils_photo from '../resources/Devils.png';
 import otter_photo from '../resources/Otter.png';
 import ostrich_photo from '../resources/Ostrich_Jockey.png';
-import GameList from "./GameList";
+import EditGameList from "./EditGameList";
 
 /*
-/ The unauthenticated view of the homepage and root route.
+/ The authenticated view of the homepage and root route.
 */
-export default function UnauthHome() {
+export default function AuthHome() {
 
     // The static sample array for the unauthenticated view.
+    // This will be replaced when we implement MongoDB.
     const [games, setGames] = useState([
         {
             id: '1',
@@ -45,7 +46,7 @@ export default function UnauthHome() {
     return (
         <div className="UnauthHome">
             <div className="navbar">
-                <p id="navtext">Log in</p>
+                <p id="navtext">Log Out</p>
             </div>
             <div className="headerbar">
                 <h1 id="npgheader">NullPointerException Games</h1>
@@ -62,7 +63,10 @@ export default function UnauthHome() {
             </div>
             <div className="games_box">
                 <h2 id="games_header">Games Catalog</h2>
-                <div className="game_list_cnt"><GameList games={games} /></div>
+                <div className="game_list_cnt"><EditGameList games={games} /></div>
+            </div>
+            <div className="new_game_box">
+                
             </div>
             <div className="bottom_bar" />
         </div>

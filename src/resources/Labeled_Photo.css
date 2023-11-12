@@ -1,0 +1,9 @@
+#photo_name {
+    color: #ffffff;
+    font-family: 'source-code';
+    text-decoration: underline;
+}
+
+#photo {
+    height: 200px;
+}
