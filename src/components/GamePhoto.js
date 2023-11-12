@@ -1,6 +1,6 @@
-import React from "react";
 import '../resources/GamePhoto.css';
 
+// Holds the game photos and titles in the unauthenticated view.
 export default function GamePhoto(props) {
 
     return (

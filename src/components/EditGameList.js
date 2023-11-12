@@ -1,8 +1,7 @@
-// Game list, conditionally renders sample list for unauthenticated users
 import '../resources/EditGameList.css'
 import EditGamePhoto from './EditGamePhoto';
 
-// or full list for authenticated users.
+// Renders the array of games for authenticated view.
 export default function EditGameList(props) {
 
     return (

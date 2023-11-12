@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import cookie from '../resources/CookieClick.png';
 import '../resources/Cookie_Clicker.css';

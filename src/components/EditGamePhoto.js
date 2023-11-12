@@ -1,5 +1,7 @@
 import '../resources/EditGamePhoto.css';
 
+// Holds the game photos, titles, edit, and delete buttons
+// in the authenticated view.
 export default function EditGamePhoto(props) {
 
     return (

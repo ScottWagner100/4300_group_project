@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import '../resources/AuthHome.css';
 import Cookie_Clicker from './Cookie_Clicker';
@@ -13,10 +12,10 @@ import otter_photo from '../resources/Otter.png';
 import ostrich_photo from '../resources/Ostrich_Jockey.png';
 import EditGameList from "./EditGameList";
 import NewGameBox from "./NewGameBox";
+import { Link } from "react-router-dom";
 
-/*
-/ The authenticated view of the homepage and root route.
-*/
+
+// The authenticated view of the homepage and root route.
 export default function AuthHome() {
 
     // The static sample array for the unauthenticated view.
@@ -47,7 +46,7 @@ export default function AuthHome() {
     return (
         <div className="UnauthHome">
             <div className="navbar">
-                <p id="navtext">Log Out</p>
+                <Link to='/' id="navtext">Log Out</Link>
             </div>
             <div className="headerbar">
                 <h1 id="npgheader">NullPointerException Games</h1>

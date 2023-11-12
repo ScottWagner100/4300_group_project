@@ -6,7 +6,7 @@ import AuthHome from './components/AuthHome';
 import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 
-
+// The route to add a game will need to be added.
 function App() {
   return (
     <Router>

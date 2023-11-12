@@ -1,6 +1,6 @@
-import React from "react";
 import '../resources/Labeled_Photo.css';
 
+// Holds dev images and names.
 export default function Labeled_Photo(props) {
 
     return (
