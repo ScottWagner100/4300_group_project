@@ -39,3 +39,30 @@
     text-decoration: underline;
     filter: drop-shadow(5px 5px 10px #000000);
 }
+
+#cookie_clicker_cnt {
+    display: flex;
+    font-family: 'source-code';
+    font-weight: 500;
+    margin-left: 5%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    height: 150px;
+}
+
+.staff_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #5C8374;
+    height: 220px;
+}
+
+#staff_header {
+    font-family: 'source-code';
+    font-weight: 400;
+    filter: drop-shadow(5px 5px 10px #000000);
+    text-decoration: underline;
+    color: #ffffff;
+}

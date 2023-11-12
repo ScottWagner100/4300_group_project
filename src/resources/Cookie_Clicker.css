@@ -1,0 +1,20 @@
+.cookie_clicker {
+    font-family: 'source-code';
+}
+
+#cookie_img {
+    width: 90px;
+}
+
+#cookie_img:hover {
+    width: 110px;
+}
+
+#click_counter {
+    margin-top: 0;
+}
+
+#cookie_clicker_click_me {
+    margin-bottom: 0;
+}
+
