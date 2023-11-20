@@ -1,0 +1,50 @@
+.gen_input_box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.gen_input_ctr {
+    text-align: left;
+    font-size: small;
+}
+
+#gen_button {
+    margin: 30px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    color: blue;
+    font-family: 'source-code';
+    font-weight: 500;
+}
+
+#return_button {
+    margin: 30px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    color: blue;
+    font-family: 'source-code';
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.gen_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #183D3D;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.gen_footer_box {
+    background-color: black;
+    height: 40px;
+}
