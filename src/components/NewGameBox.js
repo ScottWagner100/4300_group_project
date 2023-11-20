@@ -1,4 +1,5 @@
 import '../resources/NewGameBox.css';
+import { useNavigate } from 'react-router-dom';
 
 /* Contains the image generation form on
 /  the authenticated home page. I did not
@@ -6,6 +7,9 @@ import '../resources/NewGameBox.css';
 /  sure what the ultimate vision is here.
 */
 export default function NewGameBox() {
+
+    const navigate = useNavigate();
+    const gotoGen = () => navigate('/gen');
 
     return (
         <div className="new_game_box">
@@ -27,7 +31,7 @@ export default function NewGameBox() {
             </form>
                 <div className='add_game_button_cnt'>
                 <button id='add_game_button'>ADD NEW GAME</button>
-                <button id='goto_gen_button'>GO TO GENERATE LINK</button>
+                <button id='goto_gen_button' onClick={gotoGen}>GO TO GENERATE LINK</button>
             </div>
         </div>
     );
