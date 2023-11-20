@@ -4,34 +4,36 @@ import { useState } from 'react';
 
 // Contains the image generation form on
 // the authenticated home page.
-export default function NewGameBox() {
+export default function NewGameBox(props) {
 
     const navigate = useNavigate();
     const gotoGen = () => navigate('/gen');
 
     const [gameInput, setGameInput] = useState({
-        title: '',
-        url: '',
+        name: '',
+        image: '',
     });
 
     const handleTitleChange = (event) => {
         setGameInput((prevState) => {
-            return { ...prevState, title: event.target.value };
+            return { ...prevState, name: event.target.value };
         });
     }
 
     const handleUrlChange = (event) => {
         setGameInput((prevState) => {
-            return { ...prevState, url: event.target.value };
+            return { ...prevState, image: event.target.value };
         });
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        props.onUpdateList(gameInput);
+
         setGameInput({
-            title: '',
-            url: ''
+            name: '',
+            image: ''
         });
     }
 
@@ -45,7 +47,7 @@ export default function NewGameBox() {
                         placeholder='...'
                         type='text'
                         name='title'
-                        value={gameInput.title}
+                        value={gameInput.name}
                         onChange={handleTitleChange}
                     />
                 </div>
@@ -56,7 +58,7 @@ export default function NewGameBox() {
                         placeholder='...'
                         type='text'
                         name='url'
-                        value={gameInput.url}
+                        value={gameInput.image}
                         onChange={handleUrlChange}
                     />
                 </div>

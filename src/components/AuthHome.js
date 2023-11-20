@@ -43,6 +43,16 @@ export default function AuthHome() {
         },
     ]);
 
+    const handleUpdateList = (enteredListData) => {
+        const listData = {
+            ...enteredListData,
+            id: Math.random().toString()
+        };
+        setGames((prevGames) => {
+            return [listData, ...prevGames]
+        })
+    }
+
     return (
         <div className="UnauthHome">
             <div className="navbar">
@@ -66,7 +76,7 @@ export default function AuthHome() {
                 <div className="game_list_cnt"><EditGameList games={games} /></div>
             </div>
             <div className="new_game_box_cnt">
-                <NewGameBox />
+                <NewGameBox onUpdateList={handleUpdateList} />
             </div>
             <div className="bottom_bar" />
         </div>
