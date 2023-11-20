@@ -2,11 +2,8 @@ import '../resources/NewGameBox.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-/* Contains the image generation form on
-/  the authenticated home page. I did not
-/  add functionality to the form as I'm not
-/  sure what the ultimate vision is here.
-*/
+// Contains the image generation form on
+// the authenticated home page.
 export default function NewGameBox() {
 
     const navigate = useNavigate();

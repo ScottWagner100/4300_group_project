@@ -43,7 +43,7 @@ export default function UnauthHome() {
     return (
         <div className="UnauthHome">
             <div className="navbar">
-                <Link to='/login' id="navtext">Log in</Link>
+                <Link to='/login' id="navtext">Log in / Sign up</Link>
             </div>
             <div className="headerbar">
                 <h1 id="npgheader">NullPointerException Games</h1>
