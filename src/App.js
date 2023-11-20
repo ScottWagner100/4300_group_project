@@ -1,4 +1,3 @@
-
 import './App.css';
 import './resources/SourceCodePro-VariableFont_wght.ttf';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
