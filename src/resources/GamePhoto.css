@@ -4,4 +4,7 @@
 
 #game_photo_name {
     color: #ffffff;
+    font-size: large;
+    margin: 8px;
+    font-weight: 600;
 }

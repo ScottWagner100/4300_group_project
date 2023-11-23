@@ -7,6 +7,7 @@ export default function GamePhoto(props) {
         <div>
             <p id='game_photo_name'>{props.photo_text}</p>
             <img src={props.photo} id='game_photo' />
+            <p id='photo_desc'>{props.desc}</p>
         </div>
     );
 }

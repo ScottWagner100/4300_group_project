@@ -6,11 +6,9 @@ import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
 import NewGameBox from './components/NewGameBox';
+import Edit from './components/Edit';
 
 export default function App() {
-
-
-
 
   return (
     <Router>
@@ -20,6 +18,7 @@ export default function App() {
         <Route path='/auth' element={<AuthHome />} />
         <Route path='/gen' element={<GenerateGame />} />
         <Route path='/add' element={<NewGameBox />} /> 
+        <Route path='edit' element={<Edit />} />
     </Routes>
   </Router>
   );

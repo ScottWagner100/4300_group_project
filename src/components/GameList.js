@@ -25,6 +25,7 @@ export default function GameList(props) {
                 <GamePhoto 
                     photo={games.image}
                     photo_text={games.title}
+                    desc={games.description}
                 />
             ))}
         </div>
