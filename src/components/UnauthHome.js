@@ -39,7 +39,7 @@ export default function UnauthHome() {
             name: 'Ostrich Jockey'
         },
     ]);
-    
+
     return (
         <div className="UnauthHome">
             <div className="navbar">

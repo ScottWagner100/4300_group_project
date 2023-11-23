@@ -6,52 +6,13 @@ import brandon_photo from '../resources/BrandonPhoto.png';
 import scott_photo from '../resources/ScottPhoto.png';
 import thomas_photo from '../resources/ThomasPhoto.png';
 import cole_photo from '../resources/ColePhoto.png';
-import lovecraft_photo from '../resources/Lovecraft.png';
-import devils_photo from '../resources/Devils.png';
-import otter_photo from '../resources/Otter.png';
-import ostrich_photo from '../resources/Ostrich_Jockey.png';
 import EditGameList from "./EditGameList";
 import NewGameBox from "./NewGameBox";
 import { Link } from "react-router-dom";
 
 
 // The authenticated view of the homepage and root route.
-export default function AuthHome() {
-
-    // The static sample array for the unauthenticated view.
-    // This will be replaced when we implement MongoDB.
-    const [games, setGames] = useState([
-        {
-            id: '1',
-            image: lovecraft_photo,
-            name: 'Lovecraft Legionary'
-        },
-        {
-            id: '2',
-            image: devils_photo,
-            name: 'Dungeon Devils'
-        },
-        {
-            id: '3',
-            image: otter_photo,
-            name: 'Grand Theft Otter'
-        },
-        {
-            id: '4',
-            image: ostrich_photo,
-            name: 'Ostrich Jockey'
-        },
-    ]);
-
-    const handleUpdateList = (enteredListData) => {
-        const listData = {
-            ...enteredListData,
-            id: Math.random().toString()
-        };
-        setGames((prevGames) => {
-            return [listData, ...prevGames]
-        })
-    }
+export default function AuthHome(props) {
 
     return (
         <div className="UnauthHome">
@@ -73,10 +34,14 @@ export default function AuthHome() {
             </div>
             <div className="games_box">
                 <h2 id="games_header">Games Catalog</h2>
-                <div className="game_list_cnt"><EditGameList games={games} /></div>
+                <div className="game_list_cnt"><EditGameList 
+                
+                /></div>
             </div>
             <div className="new_game_box_cnt">
-                <NewGameBox onUpdateList={handleUpdateList} />
+                <NewGameBox 
+                
+                />
             </div>
             <div className="bottom_bar" />
         </div>

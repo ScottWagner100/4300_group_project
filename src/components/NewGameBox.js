@@ -36,7 +36,6 @@ export default function NewGameBox(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onUpdateList(gameInput);
 
         axios
             .post('http://localhost:4000/api/games', {
@@ -61,7 +60,7 @@ export default function NewGameBox(props) {
             desc: '',
         });
     }
-
+    
     return (
         <div className="new_game_box">
             <form onSubmit={handleSubmit}>

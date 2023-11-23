@@ -6,9 +6,13 @@ import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
 import axios from 'axios';
+import { useState, useEffect } from 'react';
 
-// The route to add a game will need to be added.
-function App() {
+export default function App() {
+
+  
+
+
   return (
     <Router>
       <Routes>
@@ -20,5 +24,3 @@ function App() {
   </Router>
   );
 }
-
-export default App;
