@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function NewGameBox(props) {
 
     const navigate = useNavigate();
-    const gotoGen = () => navigate('/gen');
+    const gotoHome = () => navigate('/auth');
 
     const [gameInput, setGameInput] = useState({
         name: '',
@@ -62,6 +62,9 @@ export default function NewGameBox(props) {
     }
     
     return (
+        <div>
+        <div className='new_game_top' />
+        <div className='new_game_header' />
         <div className="new_game_box">
             <form onSubmit={handleSubmit}>
                 <div className='input_cnt'>
@@ -97,11 +100,13 @@ export default function NewGameBox(props) {
                         onChange={handleDescChange}
                     />
                 </div>
-                <button id='add_game_button' type='submit'>ADD NEW GAME</button>
+                <div className='new_game_buttons'>
+                    <button id='add_game_button' type='submit'>ADD NEW GAME</button>
+                    <button id='goto_home_button' onClick={gotoHome}>RETURN HOME</button>
+                </div>
             </form>
-                <div className='add_game_button_cnt'>
-                <button id='goto_gen_button' onClick={gotoGen}>GO TO GENERATE LINK</button>
-            </div>
+        </div>
+        <div className='new_game_header' />
         </div>
     );
 }

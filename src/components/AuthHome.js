@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import '../resources/AuthHome.css';
 import Cookie_Clicker from './Cookie_Clicker';
 import Labeled_Photo from './Labeled_Photo';
@@ -9,10 +9,15 @@ import cole_photo from '../resources/ColePhoto.png';
 import EditGameList from "./EditGameList";
 import NewGameBox from "./NewGameBox";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 // The authenticated view of the homepage and root route.
 export default function AuthHome(props) {
+
+    const navigate = useNavigate();
+    const gotoGen = () => navigate('/gen');
+    const gotoAdd = () => navigate('/add');
 
     return (
         <div className="UnauthHome">
@@ -38,10 +43,9 @@ export default function AuthHome(props) {
                 
                 /></div>
             </div>
-            <div className="new_game_box_cnt">
-                <NewGameBox 
-                
-                />
+            <div className="footer_button_cnt">
+                <button id="add_game_link" onClick={gotoAdd}>ADD NEW GAME</button>
+                <button id="goto_gen_button" onClick={gotoGen}>GO TO GENERATE LINK</button>
             </div>
             <div className="bottom_bar" />
         </div>

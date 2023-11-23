@@ -5,12 +5,11 @@ import AuthHome from './components/AuthHome';
 import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+import NewGameBox from './components/NewGameBox';
 
 export default function App() {
 
-  
+
 
 
   return (
@@ -20,6 +19,7 @@ export default function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/auth' element={<AuthHome />} />
         <Route path='/gen' element={<GenerateGame />} />
+        <Route path='/add' element={<NewGameBox />} /> 
     </Routes>
   </Router>
   );
