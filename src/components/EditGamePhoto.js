@@ -1,8 +1,11 @@
 import axios from 'axios';
 import '../resources/EditGamePhoto.css';
 
-// Holds the game photos, titles, edit, and delete buttons
-// in the authenticated view.
+/* Holds the game photos, titles, edit, and delete buttons
+  in the authenticated view.
+  This component is poorly named and does not display the
+  edit view, just the authenticated view. 
+*/
 export default function EditGamePhoto(props) {
 
     const handleDelete = (event) => {
@@ -18,8 +21,8 @@ export default function EditGamePhoto(props) {
         <div className='game_photo_cnt'>
             <p id='edit_game_photo_name'>{props.photo_text}</p>
             <img src={props.photo} id='edit_game_photo' />
+            <p id='photo_desc'>{props.desc}</p>
             <button 
-
             className='edit_button'>EDIT</button>
             <button 
             className='delete_button'

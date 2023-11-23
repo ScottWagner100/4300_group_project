@@ -4,6 +4,9 @@
 
 #edit_game_photo_name {
     color: #ffffff;
+    font-size: large;
+    margin: 8px;
+    font-weight: 600;
 }
 
 .edit_button {
@@ -29,4 +32,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#photo_desc {
+    color: #ffffff;
+    font-size: small;
+    margin: 5px;
 }

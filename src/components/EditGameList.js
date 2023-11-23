@@ -30,6 +30,7 @@ export default function EditGameList(props) {
                     photo={game.image}
                     photo_text={game.title}
                     gameId={game._id}
+                    desc={game.description}
                     key={game._id}
                     deleteGame={deleteGame}
                 />
