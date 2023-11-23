@@ -5,6 +5,7 @@ import AuthHome from './components/AuthHome';
 import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
+import axios from 'axios';
 
 // The route to add a game will need to be added.
 function App() {
