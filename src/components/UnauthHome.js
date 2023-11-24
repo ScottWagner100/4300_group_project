@@ -7,7 +7,7 @@ import scott_photo from '../resources/ScottPhoto.png';
 import thomas_photo from '../resources/ThomasPhoto.png';
 import cole_photo from '../resources/ColePhoto.png';
 import GameList from "./GameList";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // The unauthenticated view of the homepage and root route.
 export default function UnauthHome() {

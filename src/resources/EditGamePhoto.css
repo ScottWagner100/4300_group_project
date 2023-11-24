@@ -10,18 +10,24 @@
 }
 
 .edit_button {
-    width: 80px;
-    height: 25px;
+    width: 70px;
+    height: 15px;
     margin-top: 8px;
     margin-bottom: 8px;
     color: blue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border-width: 2px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .delete_button {
     width: 80px;
-    height: 25px;
+    height: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: blue;

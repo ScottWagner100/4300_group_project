@@ -26,6 +26,7 @@ export default function GameList(props) {
                     photo={games.image}
                     photo_text={games.title}
                     desc={games.description}
+                    key={games._id}
                 />
             ))}
         </div>

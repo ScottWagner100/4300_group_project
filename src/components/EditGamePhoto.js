@@ -1,5 +1,6 @@
 import axios from 'axios';
 import '../resources/EditGamePhoto.css';
+import { useNavigate, Link } from 'react-router-dom';
 
 /* Holds the game photos, titles, edit, and delete buttons
   in the authenticated view.
@@ -22,8 +23,12 @@ export default function EditGamePhoto(props) {
             <p id='edit_game_photo_name'>{props.photo_text}</p>
             <img src={props.photo} id='edit_game_photo' />
             <p id='photo_desc'>{props.desc}</p>
-            <button 
-            className='edit_button'>EDIT</button>
+            <Link 
+            to='/edit'
+            state={{gameId:props.gameId}}
+            gameid={props.gameId}
+            className='edit_button'>EDIT
+            </Link>
             <button 
             className='delete_button'
             onClick={handleDelete}
