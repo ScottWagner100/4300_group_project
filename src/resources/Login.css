@@ -55,12 +55,13 @@
     color: blue;
 }
 
-#forgot_pw {
+#sign_up_button {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
-    font-size: 12px;
-    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .footer_box {

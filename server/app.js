@@ -4,13 +4,14 @@ const port = process.env.PORT || 4000;
 const mongoose = require('mongoose');
 const cors = require('cors');
 const games = require('./routes/api/games');
+const users = require('./routes/api/users');
 
 // Connect Database
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ extended: false }));
 app.use('/api/games', games);
 app.get('/', (req, res) => res.send('Hello World'));
-
+app.use('/api/users', users);
 
 const conn_str = 'mongodb+srv://scottwagner100:bc9vzmjvEVPuYEr5@4300-project.co4elq6.mongodb.net/?retryWrites=true&w=majority';
 mongoose.set('strictQuery', false);

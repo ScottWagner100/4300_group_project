@@ -7,6 +7,7 @@ import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
 import NewGameBox from './components/NewGameBox';
 import Edit from './components/Edit';
+import SignUp from './components/SignUp';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/gen' element={<GenerateGame />} />
         <Route path='/add' element={<NewGameBox />} /> 
         <Route path='/edit' element={<Edit />} />
+        <Route path='/signup' element={<SignUp />} />
     </Routes>
   </Router>
   );

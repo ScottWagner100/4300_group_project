@@ -1,15 +1,14 @@
-import '../resources/Login.css'
+import '../resources/SignUp.css'
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-// log in page
-// Authentication is not setup yet, the button just
-// redirects to authenticated view
-export default function Login() {
+export default function SignUp() {
 
     const [formInput, setFormInput] = useState({
         username: '',
         password: '',
+        confirmpassword: '',
+        email: '',
     });
 
     const handleUsernameChange = (event) => {
@@ -24,25 +23,40 @@ export default function Login() {
         });
     }
 
+    const handleEmailChange = (event) => {
+        setFormInput((prevState) => {
+            return { ...prevState, email: event.target.value }
+        });
+    }
+
+    const handleConfirmChange = (event) => {
+        setFormInput((prevState) => {
+            return { ...prevState, confirmpassword: event.target.value }
+        });
+    }
+
     const navigate = useNavigate();
-    const gotoAuthHome = () => navigate('/auth')
+    const gotoLogin = () => navigate('/login')
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
         setFormInput({
             username: '',
-            password: ''
+            password: '',
+            confirmpassword: '',
+            email: '',
         });
-        gotoAuthHome();
+        gotoLogin();
     }
+    
     
     return (
         <div className='login'>
             <div className='top_header_box' />
             <div className='header_box' />
             <div className='login_box'>
-                <h2 className='login_title'>NullPointerGames<br/>Devs</h2>
+                <h2 className='login_title'>Sign Up</h2>
                 <div className='login_form_cnt'>
                     <form onSubmit={handleSubmit}>
                         <input 
@@ -61,12 +75,27 @@ export default function Login() {
                             value={formInput.password}
                             onChange={handlePasswordChange}
                         />
-                        <button id='login_button' type='submit'>LOGIN</button>
+                        <input 
+                            className='input_box'
+                            name='confirmpassword'
+                            type='text'
+                            placeholder='CONFIRM PASSWORD'
+                            value={formInput.confirmpassword}
+                            onChange={handleConfirmChange}
+                        />
+                        <input
+                            className='input_box'
+                            name='email'
+                            type='text'
+                            placeholder='EMAIL'
+                            value={formInput.email}
+                            onChange={handleEmailChange}
+                        />
+                        <button id='login_button' type='submit'>CONFIRM</button>
                     </form>
-                    <Link to='/signup' id='sign_up_button'>Sign Up</Link>
                 </div>
             </div>
             <div className='footer_box' />
         </div>
     );
-};
+}
