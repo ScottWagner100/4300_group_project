@@ -18,7 +18,7 @@ export default function App() {
         <Route path='/auth' element={<AuthHome />} />
         <Route path='/gen' element={<GenerateGame />} />
         <Route path='/add' element={<NewGameBox />} /> 
-        <Route path='edit' element={<Edit />} />
+        <Route path='/edit' element={<Edit />} />
     </Routes>
   </Router>
   );

@@ -10,7 +10,6 @@ export default function Edit(props) {
     let gameId = location.state.gameId;
 
     const navigate = useNavigate();
-    const gotoHome = () => navigate('/auth');
 
     const [gameInput, setGameInput] = useState({
         name: '',
@@ -110,7 +109,6 @@ export default function Edit(props) {
                 </div>
                 <div className='new_game_buttons'>
                     <button id='add_game_button' type='submit'>CONFIRM</button>
-                    <button id='goto_home_button' onClick={gotoHome}>RETURN HOME</button>
                 </div>
             </form>
         </div>
