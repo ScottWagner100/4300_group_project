@@ -1,14 +1,21 @@
 import '../resources/NewGameBox.css';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // Contains the image generation form on
 // the authenticated home page.
 export default function NewGameBox(props) {
 
+    const [token, setToken] = useState();
+    useEffect(() => {
+        setToken(localStorage.getItem("auth-token"));
+    }, []);
+
     const navigate = useNavigate();
     const gotoHome = () => navigate('/');
+
+    if (!token) gotoHome(); // redirect home if not authenticated
 
     const [gameInput, setGameInput] = useState({
         name: '',
@@ -49,7 +56,7 @@ export default function NewGameBox(props) {
                     image: '',
                     desc: '',
                 });
-            navigate('/');
+            gotoHome();
             })
             .catch((err) => {
                 console.log('error creating game item');
