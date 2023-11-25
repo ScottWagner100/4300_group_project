@@ -46,7 +46,7 @@ export default function SignUp() {
             <div className='header_box' />
             <div className='login_box'>
                 <h2 className='login_title'>Sign Up</h2>
-                {error && <Alert variant='danger'>{error}</Alert>}
+                {error && <Alert variant='danger' className='alert_msg'>{error}</Alert>}
                 <div className='login_form_cnt'>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id='username'>

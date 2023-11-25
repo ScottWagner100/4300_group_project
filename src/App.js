@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import UserContext from './context/UserContext';
 import './resources/AuthHome.css';
+import Error from './components/Error';
 
 export default function App() {
 
@@ -54,6 +55,7 @@ export default function App() {
         <Route path='/add' element={<NewGameBox />} /> 
         <Route path='/edit' element={<Edit />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='*' element={<Error />} />
     </Routes>
   </Router>
   </UserContext.Provider>

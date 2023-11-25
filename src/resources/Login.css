@@ -75,3 +75,10 @@
     height: 40px;
 }
 
+.alert_msg {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+}
+

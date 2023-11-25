@@ -1,0 +1,9 @@
+body {
+    background-color: #5C8374;
+}
+
+.error {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'source-code';
+}

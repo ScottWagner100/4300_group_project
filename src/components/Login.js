@@ -39,9 +39,9 @@ export default function Login() {
         <div className='login'>
             <div className='top_header_box' />
             <div className='header_box' />
-            {error && <Alert variant='danger'>{error}</Alert>}
             <div className='login_box'>
                 <h2 className='login_title'>NullPointerGames<br/>Devs</h2>
+                {error && <Alert variant='danger' className='alert_msg'>{error}</Alert>}
                 <div className='login_form_cnt'>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id='email'>
