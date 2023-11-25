@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function NewGameBox(props) {
 
     const navigate = useNavigate();
-    const gotoHome = () => navigate('/auth');
+    const gotoHome = () => navigate('/');
 
     const [gameInput, setGameInput] = useState({
         name: '',
