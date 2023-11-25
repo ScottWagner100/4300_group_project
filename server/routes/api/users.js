@@ -4,7 +4,6 @@ const userRouter = express.Router();
 const jwt = require('jsonwebtoken');
 const auth = require('../../middleware/auth');
 const User = require('../../models/User');
-const router = require('./games');
 
 // signup route
 userRouter.post('/signup', async (req, res) => {
