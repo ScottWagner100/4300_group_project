@@ -1,7 +1,6 @@
 import './App.css';
 import './resources/SourceCodePro-VariableFont_wght.ttf';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AuthHome from './components/AuthHome';
 import UnauthHome from './components/UnauthHome';
 import Login from './components/Login';
 import GenerateGame from './components/GenerateGame';
@@ -11,6 +10,7 @@ import SignUp from './components/SignUp';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import UserContext from './context/UserContext';
+import './resources/AuthHome.css';
 
 export default function App() {
 
@@ -50,7 +50,6 @@ export default function App() {
         <Routes>
         <Route path='/' element={<UnauthHome />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/auth' element={<AuthHome />} />
         <Route path='/gen' element={<GenerateGame />} />
         <Route path='/add' element={<NewGameBox />} /> 
         <Route path='/edit' element={<Edit />} />

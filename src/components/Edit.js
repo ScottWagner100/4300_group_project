@@ -61,7 +61,7 @@ export default function Edit(props) {
         axios
         .put(`http://localhost:4000/api/games/${gameId}`, gameData)
         .then((res) => {
-            navigate('/auth');
+            navigate('/');
         })
         .catch((err) => {
             console.log('error updating game data');

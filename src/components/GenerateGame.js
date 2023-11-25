@@ -20,7 +20,7 @@ export default function GenerateGame() {
     }
 
     const navigate = useNavigate();
-    const gotoHome = () => navigate('/auth')
+    const gotoHome = () => navigate('/')
 
     return (
         <div className='generate_game'>

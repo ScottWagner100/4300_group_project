@@ -49,7 +49,7 @@ export default function NewGameBox(props) {
                     image: '',
                     desc: '',
                 });
-            navigate('/auth');
+            navigate('/');
             })
             .catch((err) => {
                 console.log('error creating game item');
