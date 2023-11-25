@@ -64,7 +64,6 @@ export default function GameList(props) {
                     </div>
                     <div className="footer_button_cnt">
                             <button id="add_game_link" onClick={gotoAdd}>ADD NEW GAME</button>
-                            <button id="goto_gen_button" onClick={gotoGen}>GO TO GENERATE LINK</button>
                         </div>
                     </div>
                 );
