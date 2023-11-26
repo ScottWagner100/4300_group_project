@@ -1,10 +1,18 @@
 import '../resources/GenerateGame.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+const { Configuration, OpenAIApi } = require('openai');
+
 
 // Generate new game image. Using a form as a placeholder
 // box for new url.
 export default function GenerateGame() {
+
+    // const config = new Configuration({
+//     apiKey: process.env.REACT_APP_KEY
+// })
+let apiKey = process.env.REACT_APP_KEY;
+console.log(apiKey);
 
     const [promptText, setPromptText] = useState({prompt: ''})
 

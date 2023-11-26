@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
 import '../resources/UnauthHome.css';
 import Cookie_Clicker from './Cookie_Clicker';
 import GameList from "./GameList";
-import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import StaffPhotos from "./StaffPhotos";
 

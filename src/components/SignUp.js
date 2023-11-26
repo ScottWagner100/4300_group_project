@@ -1,6 +1,6 @@
 import '../resources/SignUp.css'
 import { useState, useContext } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Form, Button, Card, Alert, Container } from 'react-bootstrap';
 import UserContext from '../context/UserContext';
 import axios from 'axios';

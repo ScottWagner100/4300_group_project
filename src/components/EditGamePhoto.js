@@ -1,6 +1,6 @@
 import axios from 'axios';
 import '../resources/EditGamePhoto.css';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 /* Holds the game photos, titles, edit, and delete buttons
   in the authenticated view.
