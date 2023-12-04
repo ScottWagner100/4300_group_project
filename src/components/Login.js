@@ -6,8 +6,6 @@ import UserContext from '../context/UserContext';
 import axios from 'axios';
 
 // log in page
-// Authentication is not setup yet, the button just
-// redirects to authenticated view
 export default function Login() {
 
     const [email, setEmail] = useState();
