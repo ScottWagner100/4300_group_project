@@ -7,13 +7,13 @@ import axios from 'axios';
 // the authenticated home page.
 export default function NewGameBox(props) {
 
+    const navigate = useNavigate();
+    const gotoHome = () => navigate('/');
+
     const [token, setToken] = useState();
     useEffect(() => {
         setToken(localStorage.getItem("auth-token"));
     }, []);
-
-    const navigate = useNavigate();
-    const gotoHome = () => navigate('/');
 
     if (!token) gotoHome(); // redirect home if not authenticated
 

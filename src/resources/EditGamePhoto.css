@@ -1,5 +1,6 @@
 #edit_game_photo {
     height: 400px;
+    width: 400px;
 }
 
 #edit_game_photo_name {
@@ -7,6 +8,7 @@
     font-size: large;
     margin: 8px;
     font-weight: 600;
+    margin-top: 40px;
 }
 
 .edit_button {
